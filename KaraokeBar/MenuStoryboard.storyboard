@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14845" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e0S-Hw-Cer">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14799.2"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="quicksand_bold.otf">
+            <string>QuicksandBold-Regular</string>
+        </array>
+        <array key="quicksand_light.otf">
+            <string>QuicksandLight-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="dE8-fI-yei">
+            <objects>
+                <viewController storyboardIdentifier="Splash2" id="OGd-NL-5jh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FLT-FM-O0w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="novofundo" translatesAutoresizingMaskIntoConstraints="NO" id="Hai-t4-Bl4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="24" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RwU-a4-DQH">
+                                <rect key="frame" x="-32" y="303" width="439" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RwU-a4-DQH" secondAttribute="height" multiplier="223:31" id="qnV-3y-9uZ"/>
+                                </constraints>
+                                <string key="text">E aí, 
+o que vamos cantar hoje ?</string>
+                                <fontDescription key="fontDescription" name="QuicksandLight-Regular" family="Quicksand" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Hai-t4-Bl4" firstAttribute="top" secondItem="OoS-tF-dA3" secondAttribute="top" id="7UL-fZ-cwz"/>
+                            <constraint firstItem="RwU-a4-DQH" firstAttribute="centerY" secondItem="FLT-FM-O0w" secondAttribute="centerY" id="D8g-d2-fWl"/>
+                            <constraint firstItem="Hai-t4-Bl4" firstAttribute="centerX" secondItem="FLT-FM-O0w" secondAttribute="centerX" id="Pyt-Oi-86n"/>
+                            <constraint firstItem="Hai-t4-Bl4" firstAttribute="leading" secondItem="OoS-tF-dA3" secondAttribute="leading" id="T1x-V0-OPN"/>
+                            <constraint firstItem="RwU-a4-DQH" firstAttribute="centerX" secondItem="FLT-FM-O0w" secondAttribute="centerX" id="eHn-gV-rre"/>
+                            <constraint firstItem="Hai-t4-Bl4" firstAttribute="centerY" secondItem="FLT-FM-O0w" secondAttribute="centerY" id="hhR-Cc-LaH"/>
+                            <constraint firstItem="OoS-tF-dA3" firstAttribute="bottom" secondItem="Hai-t4-Bl4" secondAttribute="bottom" id="k9s-iR-bUq"/>
+                            <constraint firstItem="OoS-tF-dA3" firstAttribute="trailing" secondItem="Hai-t4-Bl4" secondAttribute="trailing" id="p1a-4N-r2m"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OoS-tF-dA3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q2N-78-T3T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-578" y="61"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xlq-lY-FnS">
+            <objects>
+                <viewController storyboardIdentifier="menu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="e0S-Hw-Cer" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BPb-wk-0GB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="qrI-fI-3S9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <textField opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Escolha o seu cantor" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mzy-wH-Nju" customClass="DesignableTextField" customModule="KaraokeBar" customModuleProvider="target">
+                                <rect key="frame" x="20" y="178" width="339" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFg-TJ-QQH">
+                                <rect key="frame" x="121" y="572" width="140" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="img_internacional"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Escolha seu catálogo." lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfM-U0-Iaa">
+                                <rect key="frame" x="31" y="496" width="230" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="QuicksandBold-Regular" family="Quicksand" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Buscar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G34-E0-UBf">
+                                <rect key="frame" x="58" y="74" width="267" height="116.5"/>
+                                <fontDescription key="fontDescription" name="QuicksandBold-Regular" family="Quicksand" pointSize="57"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGY-4N-WBt">
+                                <rect key="frame" x="185" y="274" width="140" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="img_nacional"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="G34-E0-UBf" firstAttribute="top" secondItem="kmL-Zz-37O" secondAttribute="top" constant="221" id="3Cw-er-NbX"/>
+                            <constraint firstItem="kmL-Zz-37O" firstAttribute="trailing" secondItem="G34-E0-UBf" secondAttribute="trailing" constant="54" id="CVR-Ti-dmB"/>
+                            <constraint firstItem="qrI-fI-3S9" firstAttribute="bottom" secondItem="kmL-Zz-37O" secondAttribute="bottom" id="K91-gO-KmW"/>
+                            <constraint firstItem="qrI-fI-3S9" firstAttribute="top" secondItem="kmL-Zz-37O" secondAttribute="top" id="Knm-PG-l6O"/>
+                            <constraint firstItem="qrI-fI-3S9" firstAttribute="leading" secondItem="kmL-Zz-37O" secondAttribute="leading" id="VBf-1r-jg2"/>
+                            <constraint firstItem="G34-E0-UBf" firstAttribute="leading" secondItem="kmL-Zz-37O" secondAttribute="leading" constant="54" id="qaH-Gn-7we"/>
+                            <constraint firstAttribute="trailing" secondItem="qrI-fI-3S9" secondAttribute="trailing" id="vM4-Fz-Fmy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kmL-Zz-37O"/>
+                        <connections>
+                            <outlet property="nomeCantor" destination="mzy-wH-Nju" id="9SE-sa-zta"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BaV-YR-Atk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="170" y="-20"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fundo" width="1080" height="1920"/>
+        <image name="img_internacional" width="500" height="279.5"/>
+        <image name="img_nacional" width="2083.5" height="1165.5"/>
+        <image name="novofundo" width="560" height="960"/>
+    </resources>
+</document>
